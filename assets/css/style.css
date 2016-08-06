@@ -1,0 +1,354 @@
+/* BASIC PORTFOLIO */
+
+/**** LAYOUT STYLES ****/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url('../images/mars.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	color: #777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+a,
+a:link,
+a:active,
+a:visited {
+  color: #777;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header {
+	background-color: white;
+  border-bottom: 2px solid #ccc;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+}
+
+.headline {
+  padding: 15px 15px 0 15px;
+  height: 60px;
+	background-color: rebeccapurple;
+	color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.subhead {
+  margin-bottom: 1em;
+  padding: 1em 0;
+  border-bottom: 2px solid #ccc;
+  color: rebeccapurple;
+  font-size: 1.5em;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 15px 15px 0 15px;
+  width: 100%;
+  height: 45px;
+  text-align: center;
+}
+
+nav li {
+  margin: 0;
+  padding: 0 0.5em;
+  display: inline-block;
+  border-right: 1px solid #ccc;
+}
+
+nav li:last-child {
+  border: none;
+}
+
+main {
+  padding: 0 35px 35px;
+  background-color: white;
+  line-height: 2em;
+}
+
+.sidebar {
+  padding: 0 1em 2em;
+  background-color: white;
+}
+
+.sidehead {
+  margin-bottom: 1em;
+  padding: 1em 0;
+  border-bottom: 2px solid #ccc;
+  color: rebeccapurple;
+  font-size: 1.3em;
+}
+
+.sidebar li {
+  display: inline;
+}
+
+.sidebar img {
+  width: 32%;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto -110px;
+}
+
+footer {
+  margin: 0.5em auto 0;
+  padding: 50px 20px;
+  background-color: #666;
+  border-top: 5px solid rebeccapurple;
+  color: #ccc;
+  text-align: center;
+  font-size: 0.6em;
+}
+
+footer,
+.push {
+  height: 110px; 
+}
+
+
+
+
+/**** CONTENT STYLES ****/
+
+.bio-pic {
+  margin: 0 auto 1.5em;
+  width: 100%;
+  display: block;
+}
+
+main li {
+  position: relative;
+  transition: opacity 0.5s ease;
+}
+
+main li:hover {
+  opacity: 0.5;
+}
+
+main li img {
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+main .figcaption {
+  margin-bottom: 2em;
+  padding: 2% 1em;
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  bottom: 1%;
+  background-color: rebeccapurple;
+  color: white;
+  opacity: 0.8;
+  font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+}
+
+form input,
+form textarea {
+  margin-bottom: 1em;
+  padding: 0.2em;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 1.3em;
+}
+
+form textarea {
+  min-height: 150px;
+}
+
+button {
+  min-width: 100px;
+  min-height: 50px;
+  background-color: rebeccapurple;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+
+
+
+
+
+/* ~~~~~ SCREEN > 450px ~~~~~ */
+
+@media only screen and (min-width: 450px) {
+
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    width: 80%;
+    border: 1px solid #ccc;
+  }
+
+  .sidebar {
+    margin: 2em auto;
+    width: 80%;
+    border: 1px solid #ccc;
+  }
+
+
+
+  /**** CONTENT STYLES ****/
+
+  .bio-pic {
+    margin: 0 auto 1.5em;
+    width: 80%;
+    max-width: 300px;
+    display: block;
+  }
+
+  main ul {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .sidebar ul {
+    margin: 0 auto;
+    width: 234px;
+  }
+
+  .sidebar img {
+    width: 75px;
+  }
+
+
+
+}
+
+
+
+
+
+
+/* ~~~~~ SCREEN > 960px ~~~~~ */
+
+@media only screen and (min-width: 960px) {
+
+  .headline {
+    padding: 35px 35px 0 35px;
+    height: 105px;
+    display: inline-block;
+    float: left;
+  }
+
+  nav ul {
+
+  }
+
+  nav ul {
+    padding: 45px 0 0 25px;
+    height: 105px;
+    width: 960px;
+    text-align: right;
+  }
+
+  nav li:last-child {
+  padding-right: 0;
+}
+
+  .container {
+    margin: 0 auto;
+    width: 960px;
+  }
+
+  main {
+    margin-bottom: 30px;
+    width: 650px;
+    float: left;
+  }
+
+  .sidebar {
+    width: 270px;
+    float: right;
+  }
+
+  footer {
+    clear: both;
+  }
+
+
+  /**** CONTENT STYLES ****/
+
+  .bio-pic {
+    margin-right: 20px;
+    margin-bottom: 15px;
+    float: left;
+  }
+
+  main ul {
+    width: 580px;
+    max-width: 580px;
+    margin: 0;
+  }
+
+  main li,
+  main figcaption {
+    width: 270px;
+  }
+
+  main li {
+    margin-right: 0;
+    display: inline-block;
+  }
+
+  main li:nth-child(odd) {
+    margin-right: 35px;
+  }
+
+  main li {
+    margin-bottom: 20px
+  }
+
+
+
+}
